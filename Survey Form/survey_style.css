@@ -1,0 +1,105 @@
+body{
+    font-family: monospace;
+}
+
+main{
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top:20px;
+    border: 3px double black;
+    max-width: 50%;
+}
+main > div{
+    width: 60%;
+}
+#border_span{
+    margin: -10px;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form > input{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+select{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.cont{
+    display:flex;
+    text-align: left;
+    margin: 10px 5px;
+    font-size: 15px;
+}
+.cont label{
+    margin-right: 15px;
+}
+.cont input{
+    display: none;
+}
+input[type="radio"] + label > span{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+input[type="radio"]:checked + label > span{
+    background-color:black;
+}
+input[type="checkbox"] + label > span{
+    display: inline-block;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+input[type="checkbox"]:checked + label > span{
+    background-color:black;
+}
+textarea{
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+button{
+    margin: auto;
+    border: 1px solid black;
+    background: white;
+    width: 200px;
+    height: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 100ms;
+}
+button:hover{
+    border: 3px groove black;
+}
+@media (min-width: 481px) and (max-width: 800px){
+    main{
+        max-width: 80%;
+    }
+    button{
+        width: 150px;
+    }
+}
+@media (max-width: 480px){
+    main{
+        max-width: 100%;
+    }
+    button{
+        width: 80px;
+    }
+}

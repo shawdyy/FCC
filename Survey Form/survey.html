@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shawdyy Survey Form</title>
+    <link rel="stylesheet" href="survey_style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <main>
+        <span id="border_span">FCC</span>
+        <div>
+            <h1 id="title">Shawdyys Survey Form</h1>
+            <p id="description">This is a complete arbitrary survey form. Feel free to submit this!</p>
+            <form action="#" id="survey-form">
+                <label for="name" id="namelabel">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="number" id="number-label">Number:</label>
+                <input type="number" name="number" id="number" placeholder="Number" min=2 max=8>
+                <label for="dropdown">Country</label>
+                <select name="country" id="dropdown">
+                    <option value="germany">Germany</option>
+                    <option value="austria">Austria</option>
+                    <option value="switzerland">Switzerland</option>
+                </select>
+                <div class="cont" id="radios">                
+                    <input type="radio" name="answer" id="yes" value="yes">
+                    <label for="yes"><span></span>Yes</label>
+                    <input type="radio" name="answer" id="no" value="no">
+                    <label for="no"><span></span>No</label>
+                    <input type="radio" name="answer" id="maybe" value="maybe">
+                    <label for="maybe"><span></span>Maybe</label>
+                </div>
+                <div class="cont" id="checkboxes">
+                    <input type="checkbox" name="color" id="red" value="red">
+                    <label for="red"><span></span>Red</label>
+                    <input type="checkbox" name="color" id="green" value="green">
+                    <label for="green"><span></span>Green</label>  
+                    <input type="checkbox" name="color" id="blue" value="blue">
+                    <label for="blue"><span></span>Blue</label> 
+                </div>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>  
+</body>
+</html>
