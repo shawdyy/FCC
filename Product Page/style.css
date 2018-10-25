@@ -1,0 +1,344 @@
+:root{
+    --navTextColor:white;
+    --gradientColor: linear-gradient(90deg,#ff71ce,#654aff);
+    --sectiontMaxwidth: 1440px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.cModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: -5;
+    top: 5%;
+    left: 10%;
+    width: 5%;
+    height: 0%;
+    background: linear-gradient(135deg,#ff71ce,#654aff);
+    opacity: 0;
+    transition: top 500ms, left 500ms, width 500ms, height 500ms , z-index 1s, opacity 500ms;
+}
+.cModal.modalOpen{
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    transition: top 500ms, left 500ms, width 500ms, height 500ms, z-index 1ms, opacity 300ms;
+    opacity: 1;
+}
+.cModal > #logo{
+    height: 50px;
+    margin-top: 10px;
+}
+#modalHr{
+    border: none;
+    background: white;
+    width: 90%;
+    height: 1px;
+    border-radius: 3px;
+    opacity: 0.6;
+}
+.cMobilemenuitem{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+#close{
+    margin-top: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.9em;
+    color: white;
+}
+.hrShadow{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--gradientColor);
+    opacity: 0.5;
+    border: none;
+}
+#navShadow1{
+    height: 5px;
+}
+#navShadow2{
+    top:  85%;
+    height: 30px;
+    transform: rotate(0.5deg);
+}
+nav{
+    position: relative;
+    height: 110px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--navTextColor);
+    background: var(--gradientColor);
+}
+.cNav{
+    position: relative;
+    height: 110px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+#cBars{
+    display: none;
+}
+#cBars:hover{
+    cursor: pointer;
+}
+#cLogo{
+    padding-left: 7%;
+    width: 45%;
+    max-width: 50%;
+    min-width: 30%;
+}
+#cNavitem{
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+}
+#cNavitem > .navitem > a.navLink{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: var(--navTextColor);
+}
+.navitem{
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 300ms;
+}
+.navitem:hover{
+    letter-spacing: 3px;
+    transform: scale(1.2);
+    z-index: 2;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    max-width: var(--sectiontMaxwidth);
+}
+.cHero{
+    position: relative;
+    top: 0;
+    margin: auto;
+    width: 100%;
+}
+#heroImage{
+    display: block;
+    margin: auto;
+    overflow: none;
+    max-width: 100vw;
+    max-height: 650px;
+}
+.cHerotext{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    top: 23%;
+    left: 27.5%;
+    max-width: 665px;
+    width: 65%;
+    height: 53%;
+    color:white;
+}
+#herotext{
+    margin-top: 50px;
+    width: 70%;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+.cheroCta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heroCta{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    transition: all 300ms;
+}
+#heroCta:hover{
+    transform: scale(1.1);
+    background: white;
+    color: #ff71ce;
+}
+.cSection{
+    display: block;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cFiftyFifty{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.left{
+    align-self: flex-center;
+    justify-content: flex-end;
+}
+.right{
+    align-self: flex-start;
+}
+.sectionHeader{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+.specsItem{
+    list-style: none;
+    line-height: 80px;
+    font-size: 1.5em;
+}
+#hVersions{
+    display:block;
+    text-align: center;
+    margin: auto 0;
+}
+.cVersions{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    grid-auto-flow: row;
+}
+.cWatchversion{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: #CCC 0px 1px 10px 0px;
+}
+.cWatchversion > * {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+/* MEDIA QUERIES BEGIN HERE */
+/* ------------------------------------------ */
+
+@media (max-width: 1280px){
+
+}
+@media (max-width: 980px){
+    #heroCta{
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .cHerotext{
+        font-size: 2em;
+    }
+    #heroText{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 736px){
+    .cNav{
+        width: 80%;
+        justify-content: center;
+    }
+    #cLogo{
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    #logo{
+        width: 90%;
+        text-align: center;
+    }
+    #cBars{
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        font-size: 1.6em;
+    }
+    #cNavitem{
+        display: none;
+    }
+    #heroCta{
+        width: 130px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .cHerotext{
+        font-size: 1.5em;
+    }
+    #heroText{
+        margin-top: 5%;
+    }
+}
+@media (max-width: 480px){
+    nav{
+        height: 85px;
+    }
+    #logo{
+        font-size: 2.2em;
+    }
+    #cBars{
+        top: 25%;
+    }
+    #heroImage{
+        overflow: visible;
+    }
+    #heroCta{
+        margin-top: 30%;
+        color: black;
+        border: 1px solid black;
+    }
+    .cHerotext{
+        font-size: 1.2em;
+    }
+    #heroText{
+        margin-top: 5%;
+    }
+
+}

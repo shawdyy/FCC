@@ -1,0 +1,10 @@
+    <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
+         width='500' height='500' viewPort='0 0 1000 1000'>
+        <path d="M 167.387 170 L 190 90 C 220 75 280 75 310 90 L 332.613 170" stroke="black" fill="transparent" stroke-width="5" />
+        <path d="M 332.613 330 L 310 410 C 280 425 220 425 190 410 L 167.387 330" stroke="black" fill="transparent" stroke-width="5" />
+        <path d="M 200 85 c 20 -10 80 -10 100 0 l -10 -50 c -10 -5 -70 -5 -80 0 Z" stroke="black" stroke-width="5" fill="transparent"/>
+        <path d="M 200 415 c 20 10 80 10 100 0 l -10 50 c -10 5 -70 5 -80 0 Z" stroke="black" stroke-width="5" fill="transparent"/>
+        <circle cx="250" cy="250" r="115" stroke="black" fill="transparent" stroke-width="5"/>
+        <circle cx="250" cy="250" r="90" stroke="black" fill="transparent" stroke-width="5"/>
+        <circle cx="250" cy="250" r="80" stroke="black" fill="transparent" stroke-width="5"/>        
+    </svg>
