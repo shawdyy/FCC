@@ -2,7 +2,7 @@ window.addEventListener('load', function(){
     let mobileBars = document.querySelector('#cBars');
     let modal = document.querySelector('.cModal');
     let body = document.querySelector('body');
-    let mobileMenuItem = document.querySelector('.cMobilemenuitem');
+    let mobileMenuItem = document.querySelectorAll('.mNavitem');
 
     mobileBars.addEventListener('click', function(){
         if(!modal.classList.contains('modalOpen')){
@@ -10,8 +10,11 @@ window.addEventListener('load', function(){
         }
         body.style.overflow = 'hidden';
     })
-    mobileMenuItem.addEventListener('click', function(){
-        modal.classList.remove('modalOpen');
-        body.style.overflow = 'auto';
-    })
+    for (el in mobileMenuItem){
+        mobileMenuItem[el].addEventListener('click', function(){
+            modal.classList.remove('modalOpen');
+            body.style.overflow = 'auto';
+            body.attributes.removeNamedItem('style');
+        })
+    }
 })
